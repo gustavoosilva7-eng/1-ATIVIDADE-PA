@@ -33,11 +33,14 @@ header {
     display: flex;
 }
 .img-cesta{
+    display: inline-block;
+    transform-origin: center;
     float: left;
     width: 150px;
     height: 109px;
 }
 nav {
+    transform-origin: center;
      position: absolute;
     top: 10%;
     left: 50%;
@@ -50,6 +53,7 @@ nav {
 }
 
 .nav-bar a:hover {
+    transform-origin: center;
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
@@ -61,11 +65,13 @@ nav {
     text-decoration: none;
     color: rgb(117,16,16);
     font-family: 'Google Sans Code', sans-serif;
+    padding: 10px 20px;
 }
 ul {
     list-style: none;
 }
 li {
+    overflow: visible;
     display: inline-block;
     margin-right: 50px;
     margin-top: 20px;
