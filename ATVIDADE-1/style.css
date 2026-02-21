@@ -41,10 +41,11 @@ img{
 }
 h1 {
     font-size: 100px;
-    text-align: center;
-    color: rgb(117,16,16);
+    text-align: right;
+    color: rgb(233, 226, 226);
     font-family: 'Google Sans Code', sans-serif;
 }
+
 .lista {
     text-decoration: none;
     list-style-type: none;
@@ -78,7 +79,7 @@ h1 {
 }
 .text-maca{
     text-align: justify;
-    font-size: 25px;
+    font-size: 29px;
     font-family: 'Google Sans Code', sans-serif;
     margin-left: 200px ;
     margin-right: 200px;
@@ -109,16 +110,22 @@ h1 {
     width: 100px;
 }
 .button-maca {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20%;
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 700px ;
     background-color: transparent;
-    border: none; 
+    color: rgb(255, 0, 0);
+    font-family: 'Google Sans Code', sans-serif;
+    display: block;
+    border: none;
     cursor: pointer;
 }
 .button-maca img {
     width: 100px;
+}
+.container-maca {
+    float: left;
+    width: 50px;
 }
 .button-banana {
     display: block;
@@ -131,4 +138,47 @@ h1 {
 }
 .button-banana img {
     width: 100px;
+}
+
+.button-seta {
+    display: block;
+    margin-left: 880px;
+    padding: 20px;
+    border-radius: 20%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.button-seta img {
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.img-fundo-maca{
+    width: 50%;
+    border-radius: 100px;
+
+    height: auto;
+}
+
+.body-maca {
+    background-image: url("assets/Maças-fatiadas.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-banana {
+    background-image: url("assets/fundo-pedaços-de-banana.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
