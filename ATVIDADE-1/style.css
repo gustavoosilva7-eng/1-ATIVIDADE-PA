@@ -6,11 +6,81 @@
 }
 
 body {
-    background-image: url("assets/fundo.jpg");
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/fundo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: rgb(117,16,16);
+    font-family: 'Google Sans Code', sans-serif;
+}
+header {
+    position: flex;
+    width: 949px;
+    height: 109px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.img-cesta{
+    float: left;
+    width: 150px;
+    height: 109px;
+}
+nav {
+     position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    width: 949px;
+    height: 109px;
+    background: url(assets/fundoNav) top left no-repeat;
+    z-index: 99;
+}
+
+.nav-bar a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.nav-bar a {
+    transform-origin: center;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(117,16,16);
+    font-family: 'Google Sans Code', sans-serif;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+li a {
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(117,16,16);
+    font-family: 'Google Sans Code', sans-serif;
+
+}
+.texto{
+    justify-content: center;
+    text-align: center;
+    margin-right: 350px;
 }
 .img-1 {
     width: 200px;
@@ -25,110 +95,28 @@ body {
     display: flex;
     justify-content: center;
     gap: 80px;
-    
+    margin-right: 400px;
+}
+.img-0 button:hover {
+    transform: scale(1.1);
 }
 .img-0 button {
+    transition: transform 0.3s ease;
     cursor: pointer;
     padding: 20px;
     border-radius: 20%;
     background-color: transparent;
     border: none; 
 }
-img{
-    display: block;
-    margin: 0 auto;
-    width: 50vh;
-}
-h1 {
-    font-size: 100px;
-    text-align: center;
-    color: rgb(117,16,16);
-    font-family: 'Google Sans Code', sans-serif;
-}
-.lista {
-    text-decoration: none;
-    list-style-type: none;
-    text-align: justify;
-    font-size: 50px ;
-    font-family:'google sans code', sans-serif;
-    margin-left: 150px ;
-    margin-right: 150px;
-    margin-top: 100px;
-    margin-bottom: 50px;   
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     display: flex;
     justify-content: center;
-    gap: 100px;
-}
-.lista a {
-    text-decoration: none;
-    color: rgb(117,16,16);
-    font-family: 'Google Sans Code', sans-serif;
-    padding: 10px;
-    -webkit-text-stroke: 2px black;
-}
-.text-banana {
-    text-align: justify;
-    font-size: 25px ;
-    font-family: 'Google Sans Code', sans-serif;
-    margin-left: 200px ;
-    margin-right: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;   
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.text-maca{
-    text-align: justify;
-    font-size: 25px;
-    font-family: 'Google Sans Code', sans-serif;
-    margin-left: 200px ;
-    margin-right: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;   
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.text-laranja {
-    text-align: justify;
-    font-size: 25px ;
-    font-family: 'Google Sans Code', sans-serif;
-    margin-left: 200px ;
-    margin-right: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
-}
-.button-laranja {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20%;
-    background-color: transparent;
-    border: none; 
-    cursor: pointer;
-}
-.button-laranja img {
-    width: 100px;
-}
-.button-maca {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20%;
-    background-color: transparent;
-    border: none; 
-    cursor: pointer;
-}
-.button-maca img {
-    width: 100px;
-}
-.button-banana {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20%;
-    background-color: transparent;
-    border: none; 
-    cursor: pointer;
-}
-.button-banana img {
-    width: 100px;
+    align-items: center;
 }
