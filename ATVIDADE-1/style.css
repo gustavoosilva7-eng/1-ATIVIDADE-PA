@@ -274,3 +274,17 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.container-maca {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.texto-maca {
+    max-width: 600px;  
+    color: white;
+    font-size: 22px;
+}
